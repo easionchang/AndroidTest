@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.flyrise.android3.test"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="12"></uses-sdk>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" >
+        <activity android:name="cn.flyrise.android3.test.ApiDemos"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.loader.CursorLoaderActivity" android:label="Loader/1.CursorLoader">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.view.DrawerActivity" android:label="View/1.抽屉">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="cn.flyrise.android3.test.graphic.DensityActivity" android:label="Graphic/Q.Density">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.graphic.GradientDrawable1" android:label="Graphic/P.GradientDrawable1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.graphic.SlyderActivity" android:label="Graphic/O.转盘">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.FingerPaint" android:label="Graphic/N.FingerPaint">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.MeasureText" android:label="Graphic/M.MeasureText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.PathEffects" android:label="Graphic/L.PathEffects">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.PathFillTypes" android:label="Graphic/K.PathFillTypes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.Patterns" android:label="Graphic/J.Patterns">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.DrawPointActivity" android:label="Graphic/I.Draw Point">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.MoveReveseActivity" android:label="Graphic/H.MoveReveseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.MoveAlongPathActivity" android:label="Graphic/F.MoveAlongPathActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.TestBezierActivity" android:label="Graphic/E.TestBezierActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.DrawerArrowSample" android:label="Graphic/D.DrawerArrowSample">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.PolyToPoly" android:label="Graphic/C.PolyToPoly">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.flyrise.android3.test.graphic.PurgeableBitmap" android:label="Graphic/B.NonPurgeable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:targetActivity="cn.flyrise.android3.test.graphic.PurgeableBitmap" android:name="Purgeable" android:label="Graphic/A.Purgeable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.RoundRects"
+            android:label="Graphic/9.RoundRects">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.SurfaceWindowActivity"
+            android:label="Graphic/8.SurfaceWindowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.OpenGLClearActivity"
+            android:label="Graphic/7.OpenGLClearActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.SweepActivity"
+            android:label="Graphic/6.SweepActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.TextAlignActivity"
+            android:label="Graphic/5.TextAlign">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.TouchPaintActivity"
+            android:label="Graphic/4.TouchPaint">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.UnicodeChar"
+            android:label="Graphic/3.Unicode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.DrawVertices"
+            android:label="Graphic/2.三角形">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.graphic.CkeckerboardBitmapCreate"
+            android:label="Graphic/1.使用BitmapShader绘制一个棋盘">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.irregularShapes.ISMainActivity"
+            android:label="不规则图形/1.">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.list.DragSwitchActivity"
+            android:label="List/拖动">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.list.PullRefresh"
+            android:label="List/下拉刷新">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.expendlist.SimpleExpendlist"
+            android:label="List/Expendlist">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.drawer.MyDrawerTest"  />
+
+        <activity
+            android:name="cn.flyrise.android3.test.expendlist.ExpendlistWithSimpleAdapter"
+            android:label="List/ExpendlistWithSimpleAdapter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.expendlist.MyExpendlistActivity"
+            android:label="List/CustomExpendlist">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.expendlist.CustomExpendlistActivity"
+            android:label="List/CustomExpendlist2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.list.TestSelectionIndexerActivity"
+            android:label="List/SelectionIndexer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.list.TestNotifyDataChangeActivity"
+            android:label="List/NotifyDataChange--NotifyDataInvalidate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.list.TestAlphabetIndexerActivity"
+            android:label="List/TestAlphabetIndexerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.list.TestHeaderViewFootView"
+            android:label="List/TestHeaderViewFootView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.list.PullToRefreshActivity"
+            android:label="List/PullToRefreshActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.viewpager.PagerTitleDemoActivity"
+            android:label="View Pager/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.viewpager.PagerTabActivity"
+            android:label="View Pager/With Tab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.viewpager.PagerTab2Activity"
+            android:label="View Pager/Without Tab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.concurrent.productconsumer.TestPCActivity"
+            android:label="并发/生产消费">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:exported = "false"
+            android:name="cn.flyrise.android3.test.concurrent.readerwriter.ReaderWriterTestActivity"
+            android:label="并发/读者写者">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.concurrent.readerwriter2.ReaderWriterTest2Activity"
+            android:label="并发/读者写者2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.ninepatch.TestNinePatch"
+            android:label="9-Patch/TestNinePatch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.flyrise.android3.test.widthmeasurewidth.TestActivity"  />
+        <activity android:name="cn.flyrise.android3.test.effectiveloadbitmap.LoadBitmapActivity"  />
+
+        <activity android:name="cn.flyrise.android3.test.effectiveloadbitmap.LoadBitmapAsyncActivity"  />
+        <activity android:name="cn.flyrise.android3.test.effectiveloadbitmap.LoadBitmapAsyncForListActivity"  />
+
+        <activity android:name="cn.flyrise.android3.test.cache.DiskCacheActivity"  />
+        <activity android:name="cn.flyrise.android3.test.cache.ImageDiskCacheActivity"  />
+
+        <activity android:name="cn.flyrise.android3.test.compnent.UseActivity"  />
+
+        <activity android:name="json.TestJsonActivity"  />
+
+        <activity android:name="cn.flyrise.android3.test.imageView.TestImageViewActivity"  />
+
+        <activity
+            android:name="cn.flyrise.android3.test.effectiveloadbitmap.BitmapMemoryTestActivity"
+            android:label="高效加载图片/1.BitmapMemoryTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestValueAnimator"
+            android:label="动画/1.ValueAnimator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestObjectAnimator"
+            android:label="动画/2.ObjectAnimator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestAnimatorSetActivity"
+            android:label="动画/3.AnimatorSet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestBouncingBall"
+            android:label="动画/4.BouncingBall">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestViewAnimator1"
+            android:label="动画/5.TestViewAnimator1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestInterpolator"
+            android:label="动画/6.TestInterpolator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestLayoutTransition"
+            android:label="动画/7.TestLayoutTransition">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestPropertyValueHolder"
+            android:label="动画/7.TestPropertyValueHolder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.animate.FreefallAnimator"
+            android:label="动画/8.自由落体">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.TestImageInAnimator"
+            android:label="动画/9.图片出现">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.ImageInAnimatorActivity"
+            android:theme="@android:style/Theme.Translucent"
+            />
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListTranslateAnimator"
+            android:label="动画/List/1.List从左面进入(XML)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListTranslateAnimator2"
+            android:label="动画/List/2.List从左面进入(代码)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListTranslateAnimator3"
+            android:label="动画/List/3.List从上面进入(RELATIVE_TO_SELF)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListTranslateAnimator4"
+            android:label="动画/List/4.List从上面进入(RELATIVE_TO_PARENT)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListDeleteTranslateAnimator"
+            android:label="动画/List/5.List删除动画">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.animate.list.ListSwapeAnimator"
+            android:label="动画/List/6.List Item滑动动画">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.actionbar.ActionbarTestActivity"
+            android:label="ActionBar/1.ActionbarTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.actionbar.ActionBarTabActivity"
+            android:label="ActionBar/2.ActionBar Tab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.actionbar.ActionBarProvideActivity"
+            android:label="ActionBar/3.ActionBar Provide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.AlertDialogActivity"
+            android:label="Fragment/1.Alert Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.CollaborationFragment"
+            android:label="Fragment/2.Collaboration Fragment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.NoUi.FragmentReatinStateActivity"
+            android:label="Fragment/3.Fragment Reatin/UI状态">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.advanced.FragmentAnimate1Activity"
+            android:label="Fragment/4.进阶/1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.advanced.FragmentAnimate2Activity"
+            android:label="Fragment/4.进阶/2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.fragment.advanced.FragmentAnimate3Activity"
+            android:label="Fragment/4.进阶/3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.https.HttpsActivity"
+            android:label="HTTPS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.custom.MainActivity"
+            android:label="自定义界面/PieChart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.custom.SearchActivity"
+            android:label="自定义界面/搜索框">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="cn.flyrise.android3.test.layout.relative.RelativeLayoutTest1Activity"
+            android:label="布局/相对布局/1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.scroller.ScrollDemosActivity"
+            android:label="Scroller Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.multiplescreen.Test1"
+            android:label="多分辨率支持/1.Test1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.flyrise.android3.test.eventhandle.TestEventHandle"
+            android:label="事件处理/1.Test1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name="com.loopj.android.http.sample.WaypointsActivity"
+            android:label="HTTP">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.loopj.android.http.sample.GetSample" />
+        <activity android:name="com.loopj.android.http.sample.PostSample" />
+        <activity android:name="com.loopj.android.http.sample.DeleteSample" />
+        <activity android:name="com.loopj.android.http.sample.PutSample" />
+        <activity android:name="com.loopj.android.http.sample.JsonSample" />
+        <activity android:name="com.loopj.android.http.sample.FileSample" />
+        <activity android:name="com.loopj.android.http.sample.BinarySample" />
+        <activity android:name="com.loopj.android.http.sample.ThreadingTimeoutSample" />
+
+
+        <activity
+            android:name=".resource.StringTestActivity"
+            android:label="资源/1.TestString">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <Button
+        android:id="@+id/btn" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="  删除   "
+        android:visibility="gone"
+        />
+
+    <TextView  
+        android:id="@+id/key"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="数据"
+        android:background="#000"
+    />
+    
+</RelativeLayout> 

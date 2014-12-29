@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 正文的内容，使用WEBView展示 -->
+    <WebView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+        
+        
+
+    <!-- 正文补充提示栏 -->
+    <TextView
+        android:id="@+id/supplement_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_supplement_top_bg"
+        android:padding="3dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333333" 
+        android:text="正文补充（10）"/>
+
+    <!-- 正文补充列表 -->
+    <cn.flyrise.android3.test.fragment.ListViewWithoutScroll
+        android:id="@+id/supplement_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        
+
+ 
+</LinearLayout>

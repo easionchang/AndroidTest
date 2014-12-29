@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/title_rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_top_bg">
+        
+        <!-- 用户头像 ,没有头像的用户显示默认头像加上放大镜-->
+        <FrameLayout
+             android:id="@+id/user_icon_flyt"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:layout_alignParentLeft="true" 
+             android:layout_alignParentTop="true" 
+        >
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:padding="6px"
+                android:src="@drawable/head_person_fe"
+            />
+            <ImageView
+                android:id="@+id/user_icon_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/fe_lookover_data"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="1dp"
+                android:padding="6px"
+            />
+            
+        </FrameLayout>
+    
+    
+
+    <!-- 协同标题 -->
+    <TextView
+        android:id="@+id/title_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/user_icon_flyt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:lines="2"
+        android:text="协同标题协同标题协同标题协同标题协同标题"/>
+
+    <!-- 发送者信息和快速定位按钮区 -->
+    <LinearLayout
+        android:id="@+id/quick_location_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_icon_flyt">
+        <!-- 发送者和发送时间 -->
+        <TextView
+            android:id="@+id/send_user"
+            android:layout_width="49dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:text="张三"/>
+        <TextView
+            android:id="@+id/send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            android:text="2013-03-05 09:10"/>
+        
+        
+        <!-- 快速定位至协同内容 -->
+        <ImageButton
+            android:id="@+id/to_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/detail_top_btn_on"
+            android:src="@drawable/quick_btn_content"
+            android:layout_marginLeft="3dip"/>
+        
+        
+
+        <!-- 快速定位至协同附件 -->
+        <ImageButton
+            android:id="@+id/to_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/detail_top_btn"
+            android:src="@drawable/quick_btn_attachment"
+            android:layout_marginLeft="3dip" />
+
+        <!-- 快速定位至协同评论 -->
+        <ImageButton
+            android:id="@+id/to_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@drawable/detail_top_btn"
+            android:src="@drawable/quick_btn_reply"
+            android:layout_marginLeft="3dip" />
+    </LinearLayout>
+    <!-- 发送者信息和快速定位按钮区 END-->
+</RelativeLayout>
+</RelativeLayout>

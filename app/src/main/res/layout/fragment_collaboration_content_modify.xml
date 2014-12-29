@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_modify_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        
+       
+        
+
+    <!-- 正文修改提示栏 -->
+    <TextView
+        android:id="@+id/modification_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_supplement_top_bg"
+        android:padding="3dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333333"
+        android:text="正文修改（10）">
+    </TextView>
+
+   
+    <cn.flyrise.android3.test.fragment.ListViewWithoutScroll
+        android:id="@+id/modification_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

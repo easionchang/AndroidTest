@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:id="@+id/tv"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1text1"
+    android:textSize="20sp"
+    />
+
+<Button 
+    android:id="@+id/btn"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="点击" />
+
+<LinearLayout 
+    android:id="@+id/frgment_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+    
+
+<TextView  
+    android:id="@+id/tv2"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2text2"
+    android:textSize="20sp"
+    />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEEF2"
+    >
+
+  <!-- Content -->
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/content_hint"/>
+	<fragment 
+	   android:name="cn.flyrise.android3.test.view.content.DrawerMenuFragment" 
+	   android:layout_width="300dp"
+	   android:layout_height="match_parent"
+	   android:gravity="center"
+	   android:layout_gravity="start"
+	   android:background="#fff"/> 
+  </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

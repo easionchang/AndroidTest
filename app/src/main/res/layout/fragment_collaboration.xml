@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <fragment 
+        android:name="cn.flyrise.android3.test.fragment.OutlineFragment"
+        android:id="@+id/outline_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <ScrollView
+        android:id="@+id/detail_sclv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/outline_fragment"
+        android:layout_marginTop="-5dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 协同内容布局 -->
+            <fragment 
+                android:name="cn.flyrise.android3.test.fragment.ContentFragment"
+                android:id="@+id/content_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
+            
+            <fragment 
+                android:name="cn.flyrise.android3.test.fragment.ContentModifyFragment"
+                android:id="@+id/content_fragment2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+            <!-- 协同附件布局
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                layout="@layout/collaboration_detail_attachment" />
+
+            
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                layout="@layout/collaboration_detail_reply" />
+ -->
+        </LinearLayout>
+
+    </ScrollView>
+    
+</LinearLayout>

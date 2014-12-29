@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello1">Hello World, Test!</string>
+    <string name="app_name2">cn.flyrise.android3.test</string>
+    <drawable name="btn_bg1">#F00</drawable>
+</resources>

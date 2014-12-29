@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:custom="http://schemas.android.com/apk/res/cn.flyrise.android3.test" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+<ListView android:id="@+id/myListView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+     android:fadingEdge="none"  
+/> 
+
+<LinearLayout  
+    android:id="@+id/section"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content" 
+    android:background="#ffaabbcc" >  
+    <TextView 
+        android:id="@+id/sectionInfo"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:textSize="20sp"  
+        android:paddingLeft="5dip"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+/>
+</LinearLayout>
+<cn.flyrise.android3.test.list.view.SideBar  
+    android:id = "@+id/sideBar"  
+    android:layout_height="fill_parent"  
+    android:layout_width="25dip"  
+    android:layout_alignParentRight="true" 
+    custom:textSize="20sp" 
+/>
+
+
+</RelativeLayout>  

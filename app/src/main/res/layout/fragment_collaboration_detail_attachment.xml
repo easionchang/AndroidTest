@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attachment_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 正文附件提示栏 -->
+    <TextView
+        android:id="@+id/attachment_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_attachment_bg"
+        android:padding="3dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#333333" />
+
+    <!-- 正文附件列表 -->
+    <cn.flyrise.android.library.view.ListViewWithoutScroll
+        android:id="@+id/attachment_list"
+     	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content" />
+</LinearLayout>
