@@ -205,6 +205,17 @@
 
 
         <activity
+            android:name="cn.flyrise.android3.test.media.PlaybackVideoActivity"
+            android:label="media/1.Play Mp3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
             android:name="cn.flyrise.android3.test.irregularShapes.ISMainActivity"
             android:label="不规则图形/1.">
             <intent-filter>
@@ -700,6 +711,14 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="cn.flyrise.android3.test.eventhandle.MyEventActivity"
+            android:label="事件处理/2.Test2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
 
         <activity android:name="com.loopj.android.http.sample.WaypointsActivity"

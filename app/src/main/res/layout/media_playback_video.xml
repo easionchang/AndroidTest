@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP1" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK2" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP2" />
+
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络播放" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP-网络" />
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>
