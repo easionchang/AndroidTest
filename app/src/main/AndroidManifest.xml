@@ -205,7 +205,7 @@
 
         <activity
             android:name="cn.flyrise.android3.test.media.PlaybackFromLocalActivity"
-            android:label="media/1.Play Local">
+            android:label="Media/1.Play Local">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
@@ -214,13 +214,20 @@
 
         <activity
             android:name=".media.PlaybackFromNetActivity"
-            android:label="media/1.Play Net">
+            android:label="Media/2.Play Net">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".media.PlayByVideoViewActivity"
+            android:label="Media/3.Play By VideoView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
 
         <activity
