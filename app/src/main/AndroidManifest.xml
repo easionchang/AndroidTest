@@ -203,10 +203,18 @@
         </activity>
 
 
+        <activity
+            android:name="cn.flyrise.android3.test.media.PlaybackFromLocalActivity"
+            android:label="media/1.Play Local">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
 
         <activity
-            android:name="cn.flyrise.android3.test.media.PlaybackVideoActivity"
-            android:label="media/1.Play Mp3">
+            android:name=".media.PlaybackFromNetActivity"
+            android:label="media/1.Play Net">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="cn.flyrise.android3.test.CATEGORY_SAMPLE_CODE" />

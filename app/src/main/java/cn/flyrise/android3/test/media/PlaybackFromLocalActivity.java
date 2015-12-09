@@ -8,25 +8,23 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
-
-import java.io.IOException;
+import android.widget.Toast;
 
 import cn.flyrise.android3.test.R;
 
 /**
  * Created by Lenovo on 2015/12/3.
  */
-public class PlaybackVideoActivity extends Activity implements SurfaceHolder.Callback,
-        MediaPlayer.OnPreparedListener {
+public class PlaybackFromLocalActivity extends Activity implements SurfaceHolder.Callback{
     private SurfaceHolder holder;
+    private boolean isInitOk = false;
 
     MediaPlayer mediaPlayer1;
     MediaPlayer mediaPlayer2;
-    MediaPlayer mediaPlayer3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.media_playback_video);
+        setContentView(R.layout.media_playback_local);
 
         //为视频准备界面
         SurfaceView surfaceView = (SurfaceView)findViewById(R.id.surface_view);
@@ -34,29 +32,16 @@ public class PlaybackVideoActivity extends Activity implements SurfaceHolder.Cal
         holder.addCallback(this);
         holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
-
-
         initPlayMp3();
         initPlayMp4FromLocal();
-        initPlayMp4FromNet();
 
-    }
-
-    @Override
-    public void onPrepared(MediaPlayer mp) {
-        Log.e("Video","onPrepared...............................");
-        if(mediaPlayer3 != null){
-            mediaPlayer3.start();
-        }
     }
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
         //TODO 准备好才能播放的
         Log.e("Video","surfaceCreated...............................");
-//        mediaPlayer2 = MediaPlayer.create(PlaybackVideoActivity.this, R.raw.apple);
-//        mediaPlayer2.setDisplay(holder);
-//        mediaPlayer2.start();
+        isInitOk = true;
     }
 
     @Override
@@ -66,46 +51,23 @@ public class PlaybackVideoActivity extends Activity implements SurfaceHolder.Cal
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-        Log.e("Video","surfaceDestroyed...............................");
+        Log.e("Video", "surfaceDestroyed...............................");
     }
 
-    private void initPlayMp4FromNet(){
-        Button btn5 = (Button)findViewById(R.id.btn5);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {//播放视频
-                try {
-                    mediaPlayer3 = new MediaPlayer();
-                    mediaPlayer3.setDataSource("http://10.250.201.243:8080/apple.mp4");
-                    mediaPlayer3.setDisplay(holder);
-                    mediaPlayer3.setOnPreparedListener(PlaybackVideoActivity.this);
-                    mediaPlayer3.prepareAsync();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
 
-        Button btn6 = (Button)findViewById(R.id.btn6);
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {//停止播放
-                if(mediaPlayer3 != null){
-                    mediaPlayer3.release();
-                    mediaPlayer3 = null;
-                }
-            }
-        });
-    }
 
     private void initPlayMp4FromLocal(){
         Button btn3 = (Button)findViewById(R.id.btn3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//播放视频
-                mediaPlayer2 = MediaPlayer.create(PlaybackVideoActivity.this, R.raw.apple);
-                mediaPlayer2.setDisplay(holder);
-                mediaPlayer2.start();
+                if(isInitOk){
+                    mediaPlayer2 = MediaPlayer.create(PlaybackFromLocalActivity.this, R.raw.apple);
+                    mediaPlayer2.setDisplay(holder);
+                    mediaPlayer2.start();
+                }else{
+                    Toast.makeText(PlaybackFromLocalActivity.this,"surface view 还未初始化成功，请稍等...",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -126,7 +88,7 @@ public class PlaybackVideoActivity extends Activity implements SurfaceHolder.Cal
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//播放音频
-                mediaPlayer1 = MediaPlayer.create(PlaybackVideoActivity.this, R.raw.love);
+                mediaPlayer1 = MediaPlayer.create(PlaybackFromLocalActivity.this, R.raw.love);
                 mediaPlayer1.start();
             }
         });
