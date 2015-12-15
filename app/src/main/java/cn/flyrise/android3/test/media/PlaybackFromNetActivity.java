@@ -68,7 +68,7 @@ public class PlaybackFromNetActivity extends Activity implements SurfaceHolder.C
                         return;
                     }
                     mediaPlayer1 = new MediaPlayer();
-                    mediaPlayer1.setDataSource("http://10.250.201.243:8080/apple.mp4");
+                    mediaPlayer1.setDataSource("http://10.62.24.113:8080/apple.mp4");
                     mediaPlayer1.setDisplay(holder);
                     //网络播放需要缓冲，所有要有准备的过程
                     mediaPlayer1.setOnPreparedListener(PlaybackFromNetActivity.this);
